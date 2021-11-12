@@ -1,0 +1,11 @@
+#######################################################################################################################
+#
+# Configuration file used to connect to a local MS SQL server. (see docker-compose.yml)
+#
+#######################################################################################################################
+
+---
+
+spring:
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;database=master;user=sa;password=P@ssword1;

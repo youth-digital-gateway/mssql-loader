@@ -1,0 +1,18 @@
+#######################################################################################################################
+#
+# Standard Spring Boot properties. Full reference available at:
+# https://docs.spring.io/spring-boot/docs/2.5.x/reference/htmlsingle/#common-application-properties
+#
+#######################################################################################################################
+
+---
+
+spring:
+  jpa:
+    generate-ddl: true # force schema creation when hitting live (ie: non-embedded) database
+    properties:
+      '[hibernate.generate_statistics]': false # 
+      '[hibernate.jdbc.batch_size]': 1000
+      '[hibernate.jdbc.batch_versioned_data]': true
+      '[hibernate.order_inserts]': true
+      '[hibernate.order_updates]': true

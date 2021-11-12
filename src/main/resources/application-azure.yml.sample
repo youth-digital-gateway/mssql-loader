@@ -1,0 +1,15 @@
+#######################################################################################################################
+#
+# Configuration file used to connect to an Azure MS SQL server.
+#
+#######################################################################################################################
+
+---
+
+spring:
+  datasource:
+    host: # (example: my-database.database.windows.net:1433)
+    database: # (example: my-database)
+    username: # (example: my-database-user)
+    password: # (example: my-database-password)
+    url: jdbc:sqlserver://${spring.datasource.host};database=${spring.datasource.database};user=${spring.datasource.username};password=${spring.datasource.password};
